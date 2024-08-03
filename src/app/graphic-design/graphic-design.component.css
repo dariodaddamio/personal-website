@@ -1,0 +1,22 @@
+.image-grid {
+    /* Flexbox container for images */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adds space between images */
+    padding: 10px;
+}
+
+.image-grid img {
+    /* Flexbox items (images) */
+    flex: 1 1 calc(33.3% - 10px);
+    /* Adjusts to 50% width minus the gap */
+    /* flex-grow | flex-shrink | flex-basis | are shortened to flex, the shorthand for it */
+    /* grow and shrink the same */
+
+    /* basis defines the size of an item before the remaining space is distributed, inthis case, it is being calculated to spread them eavenly in 3 columns (25%) */
+
+    max-width: calc(33.3% - 10px);
+    /* Ensures images don't exceed 50% width */
+    object-fit: contain;
+}

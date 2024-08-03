@@ -1,0 +1,33 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+
+}
+
+.text-grid>a {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+
+.text-grid>a:nth-child(odd) {
+    padding-left: 3vw;
+    justify-self: start;
+}
+
+.text-grid>a:nth-child(even) {
+    padding-right: 3vw;
+    justify-self: end;
+    /* Right column items aligned to the right */
+}
