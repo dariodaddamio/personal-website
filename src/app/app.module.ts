@@ -10,8 +10,8 @@ import { routes } from './app.routes';
   ],
   providers: []
 })
-export class AppModule { 
-  getYear(): number {
+export class AppModule {
+  static getYear(): number {
     return new Date().getFullYear();
-  }
+  } 
 }

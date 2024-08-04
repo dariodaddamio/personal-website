@@ -26,9 +26,9 @@ export class HomePageComponent {
   navigateToContact() {
     this.router.navigate(['/contact']);
   }
-  // getYear(): number {
-  //   return AppModule.getYear();
-  // }
+  getYear(): number {
+    return AppModule.getYear();
+  }
 }
 
 

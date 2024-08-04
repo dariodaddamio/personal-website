@@ -1,0 +1,83 @@
+* {
+    background-color: #000;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    /* Removes underline from links */
+}
+a:hover {
+    transform: scale(1.1);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+    height: 7vw;
+    align-items: center;
+    justify-content: center;
+    /* outline: 1px solid rgb(255, 255, 255); */
+}
+
+.nav-logo {
+    display: flex;
+    opacity: 1;
+    fill: #FFF;
+    width: 20vw;
+    height: max-content;
+
+    cursor: pointer;
+    /* padding: 0;
+    outline: 2px solid rgb(255, 255, 255); */
+}
+
+.nav-logo>svg:hover {
+    transform: scale(1.1);
+}
+.bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 3vw;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.bottom-bar a {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+.bottom-bar-copyright {
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom-bar-copyright p {   
+    position: fixed;
+    bottom: 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    font-size: 1vw;
+}

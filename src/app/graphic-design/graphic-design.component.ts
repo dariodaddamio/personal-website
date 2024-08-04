@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppModule } from '../app.module';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,4 +10,11 @@ import { Router } from '@angular/router';
   styleUrl: './graphic-design.component.css'
 })
 export class GraphicDesignComponent {
+  constructor(private router: Router) {}
+  getYear(): number {
+    return AppModule.getYear();
+  }
+  navigateToHome() {
+    this.router.navigate(['/home']);
+  }
 }
