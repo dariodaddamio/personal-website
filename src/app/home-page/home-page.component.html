@@ -25,15 +25,20 @@
         <a (click)="navigateToProgramming()">programming</a>
         <a (click)="navigateToContact()">contact</a>
     </div>
-    <div class="bottom-bar">
-        <a href="https://www.linkedin.com/in/dariodaddamio/">linkedin</a>
-        <a href="https://github.com/dariodaddamio">github</a>
-        <a href="https://www.instagram.com/dariogfx/">instagram</a>
-        <a href="https://x.com/dariodaddamio">x</a>
-        <a href="https://linktr.ee/dariodaddamio">linktree</a>
-    </div>
-    <div class="bottom-bar-copyright">
-        <p>&copy; {{ getYear() }}&nbsp;Dario D'Addamio. All rights reserved.</p>
-    </div>
+    <nav class="navbar fixed-bottom bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="bottom-bar">
+                <a href="https://www.linkedin.com/in/dariodaddamio/">linkedin</a>
+                <a href="https://github.com/dariodaddamio">github</a>
+                <a href="https://www.instagram.com/dariogfx/">instagram</a>
+                <a href="https://x.com/dariodaddamio">x</a>
+                <a href="https://linktr.ee/dariodaddamio">linktree</a>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; {{ getYear() }}&nbsp;Dario D'Addamio. All rights reserved.</p>
+            </div>
+        </div>
+      </nav>
+    
 </body>
 </html>

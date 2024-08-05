@@ -1,4 +1,5 @@
 .image-grid {
+    margin-top: 7vw;
     /* Flexbox container for images */
     display: flex;
     flex-wrap: wrap;
@@ -20,3 +21,4 @@
     /* Ensures images don't exceed 50% width */
     object-fit: contain;
 }
+
