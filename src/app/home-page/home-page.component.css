@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+
 .text-grid {
     display: grid;
     margin-top: 7vw;
@@ -27,3 +35,18 @@
     justify-self: end;
     /* Right column items aligned to the right */
 }
+.fixed-bottom {
+   position: fixed;
+    bottom: 51px;
+    
+}
+
+.fixed-copyright {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+
