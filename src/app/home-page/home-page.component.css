@@ -8,19 +8,3 @@ html, body {
 body {
     overflow: hidden;
 }
-
-.fixed-bottom {
-   position: fixed;
-    bottom: 51px;
-    
-}
-
-.fixed-copyright {
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
-}
-
-

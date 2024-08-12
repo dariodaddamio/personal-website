@@ -1,7 +1,7 @@
 .text-grid {
     text-align: center;
 }
-a {
+.text-grid a {
     margin-top: 1vw;
     padding: 0 !important;
     font-size: .9vw !important;
@@ -21,3 +21,6 @@ a:hover {
     justify-self: center;
     /* Right column items aligned to the right */
 }
+
+
+ 
