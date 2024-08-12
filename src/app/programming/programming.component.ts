@@ -22,9 +22,6 @@ export class ProgrammingComponent {
   navigateToProgramming() {
     this.router.navigate(['/programming']);
   }
-  navigateToContact() {
-    this.router.navigate(['/contact']);
-  }
   getYear(): number {
     return AppModule.getYear();
   }
