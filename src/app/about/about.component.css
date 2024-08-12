@@ -1,0 +1,21 @@
+.text-grid {
+    text-align: center;
+}
+a {
+    font-size: .9vw !important;
+    justify-self: center !important;
+}
+a:hover {
+    transform: scale(1.1);
+}
+
+.text-grid>div:nth-child(odd) {
+    padding-left: 3vw;
+    justify-self: center;
+}
+
+.text-grid>div:nth-child(even) {
+    padding-right: 3vw;
+    justify-self: center;
+    /* Right column items aligned to the right */
+}

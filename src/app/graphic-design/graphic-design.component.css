@@ -1,24 +1,29 @@
 .image-grid {
-    margin-top: 7vw;
-    /* Flexbox container for images */
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    /* Adds space between images */
-    padding: 10px;
+    margin-top: 5vw;
 }
 
-.image-grid img {
-    /* Flexbox items (images) */
-    flex: 1 1 calc(33.3% - 10px);
-    /* Adjusts to 50% width minus the gap */
-    /* flex-grow | flex-shrink | flex-basis | are shortened to flex, the shorthand for it */
-    /* grow and shrink the same */
+.column {
+    width: 100%;
+    height: auto;
+    margin: .5vh;
+    flex-direction: column;
+}
 
-    /* basis defines the size of an item before the remaining space is distributed, inthis case, it is being calculated to spread them eavenly in 3 columns (25%) */
-
-    max-width: calc(33.3% - 10px);
-    /* Ensures images don't exceed 50% width */
+.column img {
+    width: 100%;
+    border-radius: .5vh;
     object-fit: contain;
 }
-
+@media(max-width: 600px) {
+    .image-grid {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .column {
+        margin-top: 5vw;
+    }
+}

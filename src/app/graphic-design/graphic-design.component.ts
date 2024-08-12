@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { AppModule } from '../app.module';
 import { Router } from '@angular/router';
 
@@ -16,5 +16,28 @@ export class GraphicDesignComponent {
   }
   navigateToHome() {
     this.router.navigate(['/home']);
+  }
+  lastScrollTop = 0;
+  scrollTimeout: any;
+
+  // Hide Navbar on Scroll Down and Show on Scroll Up
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const navbar = document.querySelector('.nav') as HTMLElement;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > this.lastScrollTop) {
+      // Scroll down
+      navbar.style.top = '-5vw'; // Adjusted based on  navbar height
+      clearTimeout(this.scrollTimeout);
+    } else {
+      // Scroll up
+      clearTimeout(this.scrollTimeout);
+      this.scrollTimeout = setTimeout(() => {
+        navbar.style.top = '0';
+      }, 130); // Delay for reappear 
+    }
+
+    this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
   }
 }
