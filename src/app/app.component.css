@@ -60,6 +60,7 @@ ul, ol {
     margin: 0;
     width: 100%;
     max-width: 100%;
+    padding-top: 1vh;
 }
 
 .bottom-bar a {
@@ -69,6 +70,7 @@ ul, ol {
     color: white;
     text-decoration: none;
     font-size: 3vh;
+    
 }
 
 .text-grid {
