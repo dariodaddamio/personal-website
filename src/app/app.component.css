@@ -16,11 +16,6 @@ a {
 a:hover {
     transform: scale(1.1);
 }
-ul, ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 .nav {
     position: fixed;
@@ -70,29 +65,28 @@ ul, ol {
     color: white;
     text-decoration: none;
     font-size: 3vh;
-    
 }
 
-.text-grid {
+.two-col-grid {
     display: grid;
     margin-top: 7vw;
     grid-template-columns: 1fr 1fr;
 }
 
-.text-grid>a {
+.two-col-grid>a {
     padding-top: 1vw;
     padding-bottom: 1vw;
     color: white;
     text-decoration: none;
     font-size: 3vw;
 }
-
-.text-grid>a:nth-child(odd) {
+.two-col-grid>a:nth-child(odd) {
     padding-left: 3vw;
     justify-self: start;
 }
 
-.text-grid>a:nth-child(even) {
+.two-col-grid>a:nth-child(even) {
     padding-right: 3vw;
     justify-self: end;
 }
+

@@ -1,0 +1,14 @@
+.fixed-bottom {
+    position: fixed;
+    bottom: 2vh;
+    left: 0;
+    right: 0; 
+ }
+ 
+.one-col {
+    margin-top: 7vw;
+    text-align: center;
+}
+.one-col p {
+    font-size: 2vh !important;
+}

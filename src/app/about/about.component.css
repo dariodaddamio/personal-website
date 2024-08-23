@@ -1,25 +1,25 @@
-.text-grid {
+.two-col-grid {
     text-align: center;
 }
-.text-grid a {
+.two-col-grid a {
     margin-top: 1vh;
     padding: 0 !important;
     font-size: 2vh !important;
     justify-self: center !important;
 }
-.text-grid p {
+.two-col-grid p {
     font-size: 2vh !important;
 }
 a:hover {
     transform: scale(1.1);
 }
 
-.text-grid>div:nth-child(odd) {
+.two-col-grid>div:nth-child(odd) {
     padding-left: 3vw;
     justify-self: center;
 }
 
-.text-grid>div:nth-child(even) {
+.two-col-grid>div:nth-child(even) {
     padding-right: 3vw;
     justify-self: center;
     /* Right column items aligned to the right */
@@ -32,4 +32,8 @@ a:hover {
     right: 0; 
  }
  
+
+.test {
+    margin-top: 7vh;
+}
  
